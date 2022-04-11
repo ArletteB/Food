@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Food </title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="assets/css/style.css">
+ 
+</head>
+<body>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="assets/img/image1.jpg"></div>
+            <div class="swiper-slide"><img src="assets/img/image2.jpg"></div>
+            <div class="swiper-slide"><img src="assets/img/image3.jpg"></div>
+            <div class="swiper-slide"><img src="assets/img/image4.jpg"></div>    
+            <div class="swiper-slide"><img src="assets/img/image5.jpg"></div>
+            <div class="swiper-slide"><img src="assets/img/image6.jpg"></div>
+            <div class="swiper-slide"><img src="assets/img/image7.jpg"></div>
+            <div class="swiper-slide"><img src="assets/img/image8.jpg"></div>
+            <div class="swiper-slide"><img src="assets/img/image9.jpg"></div>
+            
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 20,
+            stretch: 0,
+            depth: 200,
+            modifier: 1,
+            slideShadows: true,
+          },
+          loop: true,
+          autoplay: {
+              deplay: 500,
+              disableOnInteraction: false,
+          }
+          
+        });
+      </script>
+</body>
+</html>
